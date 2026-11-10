@@ -12,6 +12,17 @@ The SoC bridges two asynchronous clock domains securely using an Asynchronous FI
 3. **Sigma-Delta Modulator (Fast Domain - 250 MHz):** Converts multi-bit 8-bit power commands into a high-speed, 1-bit pulse-density modulated (PWM) hardware stream to drive the silicon micro-heater.
 
 
+## Software Golden Model (Algorithm Proof)
+
+Before implementing the hardware FSM, the hill-climbing algorithm and thermal physics (thermal lag) were modeled in Python using NumPy and Matplotlib. 
+
+![Golden Model Dashboard]
+<img width="1247" height="768" alt="image" src="https://github.com/user-attachments/assets/5713ecd0-ecd6-4540-a31a-6fa18e4b2e0a" />
+
+
+
+* **Design Insight:** The Python simulation revealed that the basic hill-climbing algorithm is highly susceptible to high-frequency sensor noise (local maxima). In a production ASIC environment, this dictates the architectural need for a digital low-pass filter (such as a Moving Average filter) in the datapath prior to the FSM.
+
 [ Optical Sensor ]
 │ (16-bit Optical Power Feedback)
 ▼
