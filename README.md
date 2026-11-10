@@ -56,7 +56,7 @@ Before implementing the hardware FSM, the hill-climbing algorithm and thermal ph
 ## 🚀 Live Simulation & Verification
 
 You can compile, simulate, and inspect waveforms for this entire hardware design directly in your browser using EDA Playground (powered by Icarus Verilog):
-* **[Run Top-Level Simulation on EDA Playground](https://www.edaplayground.com)** *(Load `top_controller.sv` and `tb_top_controller.sv`)*
+* **[Run Top-Level Simulation on EDA Playground](https://www.edaplayground.com/x/MxkB)** *(Load `top_controller.sv` and `tb_top_controller.sv`)*
 
 ### Verification Results & Waveforms
 * **CDC Safety:** Verified zero data corruption across clock domain boundaries via Gray-code pointer synchronization.
