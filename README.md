@@ -62,7 +62,7 @@ Before implementing the hardware RTL, the hill-climbing algorithm, optical Loren
 
 ---
 
-## 🚀 Live Simulation & Verification Results
+##  Live Simulation & Verification Results
 
 You can run the closed-loop verification environment and inspect the `.vcd` waveforms directly in your browser on EDA Playground:
 * **[Run Closed-Loop Simulation on EDA Playground](https://www.edaplayground.com/x/MxkB)**
